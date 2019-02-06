@@ -1,0 +1,26 @@
+{
+    "name": "Only Old Reddit",
+    "version": "1.0",
+    "description": "Reverts all new Reddit pages into old Reddit",
+    "manifest_version": 2,
+    "permissions": [
+        "storage",
+        "webRequest",
+        "*://www.reddit.com/*",
+        "*://new.reddit.com/*",
+        "webRequestBlocking"
+    ],
+
+    "page_action": {
+        "default_popup": "popup.html"
+        
+    },
+
+    "background": {
+        "scripts": [    
+	      "background.js"
+        ],
+	    "persistent": true
+    }
+}
+
